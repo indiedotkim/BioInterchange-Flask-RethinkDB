@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://bootswatch.com/superhero/bootstrap.min.css">
+<link rel="stylesheet" href="static/c3.min.css">
+<link rel="stylesheet" href="static/ui.css">
+<title>BioInterchange-Flask-RethinkDB</title>
+</head>
+<body>
+  <section id="query">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <form id="filter">
+            <div class="form-group">
+              <label for="value1">Restrict <select id="field1" class="form-control"></select> to</label>
+              <input type="text" class="form-control" id="value1" placeholder="Value">
+            </div>
+            <div class="form-group">
+              <label for="limit">Result Limit</label>
+              <input type="text" class="form-control" id="limit" placeholder="Number">
+            </div>
+            <div class="form-group">
+              <label for="offset">Offset</label>
+              <input type="text" class="form-control" id="offset" placeholder="Number">
+            </div>
+          </form>
+
+          <button class="btn btn-default" id="query" onclick="runQuery();">Query</button>
+        </div>
+        <div id="result" class="col-lg-8">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="result">
+  </section>
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="static/d3.min.js"></script>
+  <script src="static/c3.min.js"></script>
+  <script src="static/ui.js"></script>
+</body>
+</html>

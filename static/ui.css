@@ -1,0 +1,48 @@
+.c3 text {
+    color: #777;
+}
+
+.bar {
+    height: 10em;
+}
+
+.donut {
+    height: 10em;
+}
+
+li {
+    list-style-type: disc
+}
+
+ul {
+    background-color: #22384E;
+}
+
+ul > li > ul {
+    background-color: #1B3147;
+}
+
+ul > div {
+    background-color: #1B3147;
+}
+
+ul > li > ul > li > ul {
+    background-color: #13283C;
+}
+
+ul > li > ul> div {
+    background-color: #13283C;
+}
+
+ul > li > ul > li > ul {
+    background-color: #0C1F32;
+}
+
+ul > li > ul > div {
+    background-color: #0C1F32;
+}
+
+li.objectlist {
+    list-style-type: none
+}
+
